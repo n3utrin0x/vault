@@ -41,7 +41,6 @@ input[type="text"]:hover
 
 input[type="text"]:focus
 {
-	color: #111111;
 	border: 1px solid #0266C8;
 	outline: none;
 }
@@ -65,6 +64,15 @@ button:hover
 button:focus
 {
 	outline: none;
+}
+
+textarea
+{
+	overflow:hidden;
+	resize: none;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #searchbtn
@@ -120,6 +128,13 @@ button:focus
 	width: 100%;
 }
 
+#addnote
+{
+	background-color: white;
+	width: 565px;
+	margin: 0 auto;
+}
+
 #addnotetitle
 {
 	margin: 30px auto;
@@ -132,7 +147,21 @@ button:focus
 
 #addnotebody
 {
-	
+	display: block;
+	margin: 0 auto;
+	display: none;
+}
+
+#addnotelabel
+{
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+
+#addnotebtn
+{
+	display: none;	
 }
 
 .clear
