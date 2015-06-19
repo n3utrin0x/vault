@@ -11,8 +11,8 @@
 	var defaultOptions = {
 		onresize: function() {}, // Callback to call 
 		buffer: 1, // Number of extra rows to display
-		minRows: 4, // Minimum amount of rows to display
-		animate: true,
+		minRows: 1, // Minimum amount of rows to display
+		animate: false,
 		animationDuration: 50,
 		resizeOnStart: false // Set to true if you want to resize
 							 // before the user selects the textarea
