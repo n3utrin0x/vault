@@ -1,181 +1,350 @@
-*
-{
-	padding: 0;
-	margin: 0;	
-	font-family: Roboto;
-	font-size: 10pt;
-}
-
 body
 {
-	background-color: #EEEEEE;
+	background-color: #EEE;
 }
 
-#header
+h2
 {
-	padding: 15px;
-	background-color: white;
-}
-
-#logo
-{
-	width: 90px;
-	margin-left: 15px;
-	float: left;
-}
-
-input[type="text"], textarea
-{
-	border: 1px solid #DDDDDD;
-	height: 20px;
-	padding: 4px 10px;
-}
-
-input[type="text"]:hover, textarea:hover
-{
-	border: 1px solid #BBBBBB;
-}
-
-input[type="text"]:focus, textarea:focus
-{
-	border: 1px solid #0266C8;
-	outline: none;
-}
-
-button
-{
-	border: 1px solid #DDDDDD;
-	background: none;	
-	color: #888888;
-	padding: 4px;
-	height: 30px;
-}
-
-button:hover
-{
-	background-color: #2196F3;
-	border-color: #2196F3;
-	color: white;
-}
-
-button:focus
-{
-	outline: none;
+	display: inline-block;
 }
 
 textarea
 {
-	overflow:hidden;
 	resize: none;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 4px 10px;
 }
 
-#searchbtn
+table
 {
-	z-index: 1;
-	width: 60px;
-	border-left: 0;
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-
-#searchtxt
-{
-	z-index: 2;
-	float: left;
-	width: 650px;
-	margin-left: 45px;
-}
-
-#menu
-{
-	background-color: #ffbb00;
-	height: 50px;
 	width: 100%;
 }
 
-#menu #content *
+thead tr th
 {
-	float: left;
-	line-height: 50px;
-}
-
-#menu #content
-{
-	opacity: 0.7;
-}
-
-#menu #content:hover
-{
-	opacity: 1;
 	cursor: pointer;
 }
 
-#menubtn
+a
 {
-	margin: 20px;
-	margin-right: 10px;
+	color: #111;
 }
 
-#notes
+hr
 {
-	background-color: #EEEEEE;
-	width: 100%;
+	margin: 5px 0;
 }
 
-#addnote
+a.disabled:hover
 {
-	position: relative;
-	background-color: white;
-	width: 550px;
-	margin: 30px auto;
+	color: black;
 }
 
-#addnotetitle
+.left
 {
-	width: 100%;
-	height: 45px;
-	box-sizing: border-box;
-	background-color: white;
-	box-shadow: 1px 1px 2px #CCCCCC;
+	float: left;
 }
 
-#addnotebody
+.right
 {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 40px;
-	display: none;
-	width: 100%;
-}
-
-#addnotelabel
-{
-	width: 20px;
-	height: 20px;
-	display: none;
-}
-
-#addnotebtn
-{
-	display: none;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	border: none;
-	padding: 30px 20px;
-}
-
-#addnotebtn:hover
-{
-	color: #333333;
-	background: none;
+	float: right;
 }
 
 .clear
 {
 	clear: both;
+}
+
+.content
+{
+	padding: 0 20px;
+	width: 100%;
+	margin-left: 400px;
+	width: calc(100% - 400px);
+}
+
+.content p
+{
+	text-align: justify;
+}
+
+hr
+{
+	border-color: #2196F3;
+}
+
+.green
+{
+	color: #00C853;
+}
+
+.red
+{
+	color: #F44336;
+}
+
+.yellow
+{
+	color: #FFAB00;
+}
+
+.blue
+{
+	color: #1976D2;
+}
+
+.brown
+{
+	color: #555555;
+}
+
+.black
+{
+	color: black;
+}
+
+.orange
+{
+	color: #3F51B5;
+}
+
+.success-msg
+{
+	color: red;
+	display: none;
+	text-align: center;
+	width: 100%;
+	border-right: 5px solid #e7e7e7;
+	padding: 10px;
+}
+
+.sysmod
+{
+	box-sizing: border-box;
+	position: relative;
+}
+
+.description
+{
+	white-space: pre-wrap;
+}
+
+.btnedit, .btndelete, .btndone
+{	
+	float: right;
+	margin-top: 20px;
+	width: 100px;
+}
+
+.btndelete
+{
+	margin-right: 10px;
+	display: none;
+}
+
+.sysmod textarea
+{
+	width: 100%;
+	resize: none;
+	overflow: hidden;
+	padding: 5px;
+	margin: 0;
+	border-radius: 3px;
+}
+
+.sysmod select
+{
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.sysmod input[type="date"]
+{
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid #AAA;
+}
+
+.sysmod input[type="text"]
+{
+	border: none;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: none;
+}
+
+.sysmod textarea
+{
+	border: none;
+	background: none;	
+}
+
+.sysmod .response
+{
+	float: right;
+	color: red;
+	margin-right: 2px;
+	margin-top: 9px;
+	height: 20px;
+}
+
+.thumbs-up
+{
+	margin-top: 40px;
+	float: right;
+	margin-right: 5px;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.thumbs-up:hover
+{
+	color: #00C853;
+	cursor: pointer;
+}
+
+.thumbs-down
+{
+	margin-top: 40px;
+	float: right;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.thumbs-down:hover
+{
+	color: red;
+	cursor: pointer;
+}
+
+/* some fixes to menu.css and bootstrap-datetimepicker.min.css style interference */
+
+.bootstrap-datetimepicker-widget
+{
+	width: 98% !important;
+	max-width: 400px;
+}
+
+.btn[data-action="togglePeriod"]
+{
+	border-right: none !important;
+	border: 1px solid transparent !important;
+	height: auto !important;
+	border-radius: 4px !important;
+}
+
+.bootstrap-datetimepicker-widget li .glyphicon
+{
+	padding-right: 0 !important;
+}
+
+/* some fixes to menu.css and bootstrap-multiselect.min.css style interference */
+
+.multiselect-container
+{
+	width: 98%;
+	border-radius: 0;
+	max-height: 500px;
+}
+
+#server+.btn-group .multiselect-container, #service+.btn-group .multiselect-container
+{
+	overflow-y: scroll;
+}
+
+.multiselect-container li.disabled a
+{
+	display: none;
+}
+
+.multiselect-container .input-group
+{
+	position: fixed;
+	background-color: white;
+	width: 368px !important;
+	margin: 0 !important;
+	z-index: 10;
+}
+
+.multiselect-container-spacer
+{
+	height: 50px;
+}
+
+.multiselect-container li a
+{
+	padding: 0 !important;
+}
+
+.multiselect-container .checkbox:hover, .multiselect-container .radio:hover
+{
+	background-color: #EEE;
+}
+
+.multiselect-container li.active .checkbox, .multiselect-container li.active .checkbox:hover, .multiselect-container li.active .radio, .multiselect-container li.radio .checkbox:hover
+{
+	background-color: #1565C0;
+	color: #EEE !important;
+}
+
+.multiselect-container li
+{
+	border-bottom: none !important;
+}
+
+.btn-group .btn
+{
+	text-align: left;
+	padding-left: 16px;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	color: #555;
+}
+
+.btn-group button .caret
+{
+	display: none;
+}
+
+.multiselect-container input[type="checkbox"], .multiselect-container input[type="radio"]
+{
+	display: none;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover
+{
+	color: #333;
+}
+
+.side-menu .navbar-nav .active .btn-group .btn
+{
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.side-menu .navbar-nav .active .btn-group .btn:hover, .side-menu .navbar-nav .active .btn-group .btn:focus
+{
+	background-color: transparent;
+	border-color: #F44336;
+}
+
+.multiselect-search
+{
+	border: none !important;
+	height: 50px !important;
+	width: 100% !important;
+	box-shadow: none;
+	background-color: white;
+}
+
+.multiselect-clear-filter
+{
+	display: none;
+}
+
+.filter .input-group-addon
+{
+	display: none;
+}
+
+.filter .input-group
+{
+	width: 98%;
 }

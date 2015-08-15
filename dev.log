@@ -1,0 +1,25 @@
+* Task
++ Feature
+x Bugfix
+- Change
+> Note
+? Question
+
+08/12/2015
+x Fixed a bug where the search result items in the Multiselect dropdown lists would be displayed under the search box itself and therefore appear hidden
+? The servers are filtered by "d:DeviceTypeValue = 'Server' or d:DeviceTypeValue = 'Virtual Server'". Do all servers have to be displayed? The full XML file containing all the server data is available at servers.xml
+? Is the Edit request regarding the change after being released? Editing is not allowed after the change is released because every modification to a change itself is also subject to approval and is not allowed after the approval process is finished.
+- Changed the Edit button so that it only displays on changes that are not approved. previously it displayed on changes that were not completed.
+> Notice that all fields are technically required, however stuff like "not specified", or "not needed" or just simply "n/a" can be written instead.
++ Added date verification for starting date < ending date & dates being after today
++ Added "Title"s to Add Change form elements that display in form of a tooltip on mouse hover. This is to help keep track of what field was for what after inputting text.
++ Added Delete functionality. Delete button now actually works.
+x Fixed the problem of report files (.cvs) not being opened in excel (or rather displaying warning messages when opened in excel). Turns out all I needed to do was adding an apastrophe to the beginning of the data.
+x Fixed a bug where some of the input was being split into additional columns because of having commas in them. The report process now converts all commas to semi-colons before insertion into the .csv file.
+> I intentionally left out the Documentation URL field due to finding it redundant. Based on my observation, in our current sysmod people either put the Change Description in a separete document and then link it twice in Change Description and Documentation URL, or they would fill out the Change Description thoroughly and leave the Documentation URL field empty.
+
+08/13/2015
++ Added forced HTTP tp HTTPS redirection
++ Servers and Services dropdown lists are now sorted alphabetically (ascii)
++ Added an overflow scrollbar that appears when the side menu expands beyond the screen height
+> Calendar is in the works...
